@@ -3,4 +3,35 @@
 @{
 }
 
-<a class="nav-link text-dark" asp-area="" asp-page="Checkout/Checkout">Checkout</a>
+<div class="text-center container">
+    <h1>Создать свою собственную пиццу</h1>
+    <form method="post">
+        <input type="text" asp-for="Pizza.PizzaName" placeholder="Дайте название вашей пиццы..."/>
+         <br /> 
+        <input type="checkbox" asp-for="Pizza.TomatoSauce" placeholder="TomatoSauce"/> Томатный соус
+        <br /> 
+
+        <input type="checkbox" asp-for="Pizza.Cheese" placeholder="Cheese"/> Сыр
+        <br /> 
+
+        <input type="checkbox" asp-for="Pizza.Peperoni" placeholder="Peperoni"/> Пеперони
+        <br /> 
+
+        <input type="checkbox" asp-for="Pizza.Mushroom" placeholder="Mushroom"/> Гриб
+        <br />
+
+        <input type="checkbox" asp-for="Pizza.Tuna" placeholder="Tuna"/> Тунец
+        <br />
+
+        <input type="checkbox" asp-for="Pizza.Pineapple" placeholder="Pineapple"/> Ананас
+        <br />
+
+        <input type="checkbox" asp-for="Pizza.Ham" placeholder="Ham"/> Ветчина
+        <br />  
+
+        <input type="checkbox" asp-for="Pizza.Beef" placeholder="Beef"/> Beef
+        <br />
+
+        <button class="btn btn-primary mt-1" type="submit">Мой заказ</button>
+    </form>
+</div>
