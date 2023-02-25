@@ -12,6 +12,7 @@
 		<Content Remove="wwwroot\images\Pizzas\Caesar.jpg" />
 		<Content Remove="wwwroot\images\Pizzas\Carbonara.jpg" />
 		<Content Remove="wwwroot\images\Pizzas\Cheese.jpg" />
+		<Content Remove="wwwroot\images\Pizzas\Create.jpg" />
 		<Content Remove="wwwroot\images\Pizzas\Favorite.jpg" />
 		<Content Remove="wwwroot\images\Pizzas\Green.jpg" />
 		<Content Remove="wwwroot\images\Pizzas\Hawaiian.jpg" />
@@ -31,6 +32,7 @@
 		<Resource Include="wwwroot\images\Pizzas\Caesar.jpg" />
 		<Resource Include="wwwroot\images\Pizzas\Carbonara.jpg" />
 		<Resource Include="wwwroot\images\Pizzas\Cheese.jpg" />
+		<Resource Include="wwwroot\images\Pizzas\Create.jpg" />
 		<Resource Include="wwwroot\images\Pizzas\Favorite.jpg" />
 		<Resource Include="wwwroot\images\Pizzas\Green.jpg" />
 		<Resource Include="wwwroot\images\Pizzas\Hawaiian.jpg" />
