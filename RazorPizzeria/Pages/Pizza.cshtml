@@ -29,13 +29,13 @@
                             </div>
                         </div>
                     </div>
-                @foreach (var pizza in Model.pizzaModelDB)
+                @foreach (var pizza in Model.pizzasModels)
                 {
                     var imagePath = $"/images/Pizzas/{pizza.ImageTitle}.jpg";
                                      <div class="col-3 mb-5 pizza-img">   
                                         <h3>@pizza.PizzaName</h3>
                                         <img src="@imagePath" class="w-100 pizza-img" asp-append-version="true"/>
-                                            <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="Checkout/Checkout" asp-route-PizzaName="@pizza.PizzaName" asp-route-PizzaPrice="@pizza.FinalPrice">Купить пиццу</a>
+                                            <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="Checkout/Checkout" asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaName="@pizza.PizzaName" asp-route-PizzaPrice="@pizza.FinalPrice">Купить пиццу</a>
                                     <br />
                                  </div>
                 }

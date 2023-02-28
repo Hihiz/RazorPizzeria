@@ -1,11 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using RazorPizzeria.Data;
 using RazorPizzeria.Models;
 
 namespace RazorPizzeria.Pages
 {
     public class PizzaModel : PageModel
     {
+        private readonly ApplicationContext _db;
+
+        public PizzaModel(ApplicationContext db)
+        {
+            _db = db;
+        }
+
+        public List<PizzasModel> pizzasModels = new List<PizzasModel>();
+
         public List<PizzasModel> pizzaModelDB = new List<PizzasModel>()
         {
             new PizzasModel()
@@ -126,6 +136,7 @@ namespace RazorPizzeria.Pages
 
         public void OnGet()
         {
+            pizzasModels = _db.PizzasModels.ToList();
         }
     }
 }
