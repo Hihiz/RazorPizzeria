@@ -12,5 +12,6 @@ namespace RazorPizzeria.Data
         }
 
         public DbSet<PizzaOrder> PizzaOrders { get; set; }
+        public DbSet<PizzasModel> PizzasModels { get; set; }
     }
 }
